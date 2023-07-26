@@ -59,7 +59,7 @@ header {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 .nav-link {
@@ -69,11 +69,11 @@ header {
   background: none;
   font-size: var(--text-l);
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .nav-link:hover {
-  color: var(--text-soft);
+  color: var(--text-button-hover);
 }
 
 .nav-menu span {

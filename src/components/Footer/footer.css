@@ -1,0 +1,35 @@
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content p {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1rem;
+}
+
+.footer-copyright {
+  font-family: var(--font-secondary);
+  font-size: var(--text-s);
+  letter-spacing: 0.1rem;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/logo2023.png';
 import './header.css';
 
@@ -8,10 +9,12 @@ import './header.css';
 export default function Header() {
   return (
     <header className="header" id="header">
+
+
       <div className="header-container">
         <div className="header-top">
           <div className="nav-logo" id="home">
-            <img src={Logo} alt="Logo" />
+            <Link to="/"><img src={Logo} alt="Logo" /></Link>
           </div>
           <div className="nav-text">
             <h1 className="nav-title">BEN HENSOR</h1>
@@ -22,13 +25,13 @@ export default function Header() {
           <div className="nav-container" id="nav-container">
             
             <div className="nav-menu">
-              <button className="nav-link">film</button>
-              <span>|</span>
-              <button className="nav-link">commercials</button>
-              <span>|</span>
-              <button className="nav-link">about</button>
-              <span>|</span>
-              <button className="nav-link">contact</button>
+            <Link to="/film"><button className="nav-link">film</button></Link>
+            <span>|</span>
+            <Link to="/commercials"><button className="nav-link">commercials</button></Link>
+            <span>|</span>
+            <Link to="/services"><button className="nav-link">services</button></Link>
+            <span>|</span>
+            <Link to="/contact"><button className="nav-link">contact</button></Link>
             </div>
           </div>
         </div>

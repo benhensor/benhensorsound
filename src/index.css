@@ -10,9 +10,9 @@
     /* Global Colours */
 
   --accent-color: #DE9E36;
-  --secondary-color: #556D60;
+  --highlight-color: #41BAAE;
   --tertiary-color: #357435;
-  --quaternary-color: #323232;
+  --background-color: #323232;
   --quinary-color: #f5f5f5;
   --senary-color: #ccc;
   --close-color: #ee3232;
@@ -23,8 +23,9 @@
   --copy-dkbg-color: #8D8D8D;
 
 
-  --text-accent: #F4EAB1;
+  --text-accent: #f4eab1;
   --text-button: #41BAAE;
+  --text-button-hover: #e0efee;
   --text-soft: #8D8D8D;
 
 
@@ -77,7 +78,7 @@
 html {
   scroll-behavior: smooth;
   color-scheme: dark light;
-  background-color: #1c160a;
+  background-color: #1a1816;
 }
 
 body {
