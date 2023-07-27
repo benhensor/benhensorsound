@@ -36,6 +36,9 @@ return (
           <a href="https://www.imdb.com/name/nm5978088/?ref_=rvi_nm" rel="noreferrer" target="_blank">
             <span>IMDB</span>
           </a>
+          <a href="https://vimeo.com/benhensor" rel="noreferrer" target="_blank">
+            <span>Vimeo</span>
+          </a>
         </div>
       </div>
   

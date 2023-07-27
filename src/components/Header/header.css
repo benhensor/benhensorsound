@@ -1,7 +1,14 @@
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  border-bottom: 5px solid var(--accent-color);
+  overflow: hidden;
+  background-color: var(--background-main);
   display: flex;
   justify-content: center;
-  border-bottom: 5px solid var(--accent-color);
 }
 
 .header-container {
@@ -79,4 +86,46 @@ header {
 .nav-menu span {
   font-size: var(--text-xl);
   color: var(--text-soft);
+}
+
+@media screen and (max-width: 59.9rem) {
+  
+  .header-container {
+    margin: 0 5%;
+  }
+
+  .nav-logo img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .nav-title {
+    font-size: var(--text-l);
+    letter-spacing: 0.5rem;
+  }
+
+  .nav-subtitle {
+    font-size: var(--text-s);
+    letter-spacing: 0.1rem;
+  }
+
+  .header-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+  }
+
+  .nav-menu {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: var(--text-l);
+  }
+
+  .nav-menu span {
+    font-size: var(--text-l);
+  }
+  
 }
