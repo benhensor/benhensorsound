@@ -6,7 +6,7 @@ header {
   z-index: 100;
   border-bottom: 5px solid var(--accent-color);
   overflow: hidden;
-  background-color: var(--background-main);
+  background-color: #1a1816;
   display: flex;
   justify-content: center;
 }
@@ -70,7 +70,7 @@ header {
 }
 
 .nav-link {
-  color: var(--text-button);
+  color: var(--link-button);
   letter-spacing: 0.2rem;
   border: none;
   background: none;
@@ -80,7 +80,7 @@ header {
 }
 
 .nav-link:hover {
-  color: var(--text-button-hover);
+  color: var(--link-button-hover);
 }
 
 .nav-menu span {

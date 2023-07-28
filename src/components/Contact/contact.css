@@ -1,0 +1,105 @@
+#contact {
+  height: 100%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  position: relative;
+}
+
+.contact-title {
+  margin-bottom: 4rem;
+  color: var(--highlight-color);
+  font-size: var(--text-xxxl);
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 10rem; /* Adjust this width as per your preference */
+  text-align: right;
+  margin-right: 1rem; /* Add some space between the label and input */
+  color: var(--text-soft);
+}
+
+/* Style the container of each form field (div) */
+.contact-box div {
+  width: 100%;
+  display: flex; /* Use flexbox to align label and input on the same line */
+  justify-content: center;
+  align-items: flex-start; /* Center items vertically in the flex container */
+  margin-bottom: 1rem; /* Add some space between each form field */
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Optional: Add some additional styling for the input elements */
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: var(--text-r);
+  width: 65%; /* Adjust the width as per your preference */
+  padding: 1rem;
+  border: 1px solid var(--text-soft);
+  border-radius: 0.2rem;
+}
+
+#contact textarea {
+  height: 200px;
+  resize: none;
+}
+
+#contact button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.8rem 4rem;
+  width: 65%;
+  font-size: var(--text-l);
+  font-weight: 600;
+  background-color: var(--button);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+#contact button:hover {
+  background-color: var(--button-hover);
+  color: var(--text-dark);
+}
+
+#contact button img {
+  width: 2rem;
+  height: 2rem;
+  filter: none;
+  transition: all 0.1s ease-in-out;
+}
+
+#contact button:hover img {
+  filter: invert(1);
+}

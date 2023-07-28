@@ -1,0 +1,73 @@
+#services {
+
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60rem;
+}
+
+.services-title {
+  margin-bottom: 4rem;
+  color: var(--highlight-color);
+  font-size: var(--text-xxxl);
+}
+
+.services-service {
+  font-size: var(--text-r);
+  color: var(--text-soft);
+  margin: 2rem 0;
+}
+
+.services-list {
+  list-style: none;
+  color: var(--text-soft);
+  margin: 4rem 0;
+}
+
+.services-item {
+  color: var(--text-soft);
+  transition: all 0.1s ease-in-out;
+}
+
+.services-item:hover {
+  color: var(--text-accent);
+}
+
+.services-clients {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 2rem;
+  width: 60rem;
+}
+
+.services-clients-logo {
+  width: 20rem;
+  filter: brightness(0) invert(1);
+}
+
+.ullac,
+.adidas,
+.nike,
+.omniplex {
+  width: 10rem;
+}
+
+.brompton,
+.dorothyperkins,
+.youngminds,
+.vogue,
+.sutc {
+  width: 15rem;
+}

@@ -18,15 +18,18 @@
   --close-color: #ee3232;
 
   --text-color-light: #fff;
-  --text-color-dark: #323232;
+ 
   --copy-color: #5C5C5C;
   --copy-dkbg-color: #8D8D8D;
 
 
   --text-accent: #f4eab1;
-  --text-button: #41BAAE;
-  --text-button-hover: #e0efee;
+  --link-button: #41BAAE;
+  --link-button-hover: #e0efee;
+  --button: #005149;
+  --button-hover: #41BAAE;
   --text-soft: #8D8D8D;
+  --text-dark: #323232;
 
 
 
@@ -73,6 +76,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid #f00 !important; */
 }
 
 html {
