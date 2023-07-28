@@ -88,10 +88,10 @@ export default function Contact() {
       </div>
       <button type="submit"><span>{buttonText}</span><img src={send} alt="" className="connect-icon" /></button>
       {
-              status.message &&
-              <div className="contact-status-message">
-                <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-              </div>
+        status.message &&
+        <div className="contact-status-message">
+          <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+        </div>
       }
     </form>
 

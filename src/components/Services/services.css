@@ -15,7 +15,7 @@
 
 .services-title {
   margin-bottom: 4rem;
-  color: var(--highlight-color);
+  color: var(--accent-color);
   font-size: var(--text-xxxl);
 }
 
@@ -66,4 +66,44 @@
 .vogue,
 .sutc {
   width: 15rem;
+}
+
+@media screen and (max-width: 59.9rem) {
+  
+  .services-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .services-title {
+    font-size: var(--text-xxl);
+  }
+
+  .services-clients {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  
+  .services-clients-logo {
+    width: 14rem;
+    filter: brightness(0) invert(1);
+  }
+  
+  .ullac,
+  .adidas,
+  .nike,
+  .omniplex {
+    width: 8rem;
+  }
+  
+  .brompton,
+  .dorothyperkins,
+  .youngminds,
+  .vogue,
+  .sutc {
+    width: 12rem;
+  }
 }

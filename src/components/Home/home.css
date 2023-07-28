@@ -54,12 +54,12 @@
 }
 
 .home-title {
-  color: var(--highlight-color);
+  color: var(--accent-color);
   font-size: var(--text-xxxxl);
 }
 
 .home-subtitle {
-  color: var(--text-accent);
+  color: var(--text-highlight);
   font-size: var(--text-xxl);
   letter-spacing: 0.2rem;
 }
