@@ -42,7 +42,7 @@
   width: 90%;
   height: 90%;
   object-fit: contain;
-  object-position: calc(bottom + 10%);
+  object-position: center bottom;
   z-index: 0;
 }
 
