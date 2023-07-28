@@ -5,31 +5,48 @@ import './contact.css';
 
 export default function Contact() {
 
-  const [formData, setFormData] = useState({
+  const formData = {
     name: '',
     email: '',
     message: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value
-    }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you can handle the form submission, e.g., send data to the server or perform validation
-    console.log(formData);
-    // Reset the form after submission
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
-  };
+  const [formDetails, setFormDetails] = useState(formData)
+  const [buttonText, setButtonText] = useState('SEND')
+  const [status, setStatus] = useState({})
+
+  const onFormUpdate = (category, value) => {
+    setFormDetails({
+      ...formDetails,
+      [category]: value
+    })
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setButtonText('Sending...')
+    let response = await fetch('http://localhost:5000/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+        },
+        body: JSON.stringify(formDetails)
+      })
+      setButtonText('SEND')
+      let result = await response.json()
+      setFormDetails(formData)
+      if (result.code === 200) {
+        setStatus({ success: true, message: 'Message sent successfully!'})
+        setTimeout(() => {
+        setStatus({});
+        }, 2000);
+      } else {
+        setStatus({ success: false, message: 'Something went wrong, please try again later.'})
+        setTimeout(() => {
+          setStatus({});
+        }, 2000);
+      }
+  }
 
   return (
     <section id="contact">
@@ -43,8 +60,8 @@ export default function Contact() {
           type="text"
           id="name"
           name="name"
-          value={formData.name}
-          onChange={handleChange}
+          value={formDetails.name}
+          onChange={(e) => onFormUpdate('name', e.target.value)} 
           required
         />
       </div>
@@ -54,8 +71,8 @@ export default function Contact() {
           type="email"
           id="email"
           name="email"
-          value={formData.email}
-          onChange={handleChange}
+          value={formDetails.email}
+          onChange={(e) => onFormUpdate('email', e.target.value)} 
           required
         />
       </div>
@@ -64,12 +81,18 @@ export default function Contact() {
         <textarea
           id="message"
           name="message"
-          value={formData.message}
-          onChange={handleChange}
+          value={formDetails.message}
+          onChange={(e) => onFormUpdate('message', e.target.value)} 
           required
         />
       </div>
-      <button type="submit">Send<img src={send} alt="" className="connect-icon" /></button>
+      <button type="submit"><span>{buttonText}</span><img src={send} alt="" className="connect-icon" /></button>
+      {
+              status.message &&
+              <div className="contact-status-message">
+                <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+              </div>
+      }
     </form>
 
 

@@ -103,3 +103,20 @@ textarea {
 #contact button:hover img {
   filter: invert(1);
 }
+
+.contact-status-message::before {
+  content: 'Hello';
+}
+
+.contact-status-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5rem;
+}
+
+.contact-status-message p {
+  font-size: var(--text-l);
+  color: var(--text-color-medium);
+  margin-bottom: 2rem;
+}
