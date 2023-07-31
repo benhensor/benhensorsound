@@ -76,7 +76,7 @@
 }
 
 .home-links {
-  margin-top: 4rem;
+  margin: 4rem 0;
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -121,4 +121,30 @@
 
 .home-links a:hover span {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+.home-page-links {
+  margin: 4rem 0;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.home-link {
+  color: var(--link-button);
+  letter-spacing: 0.2rem;
+  border: none;
+  background: none;
+  font-size: var(--text-xxl);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.home-link:hover {
+  color: var(--link-button-hover);
+}
+
+.home-page-links span {
+  font-size: var(--text-xxl);
+  color: var(--text-soft);
 }

@@ -15,7 +15,7 @@ export default function Film() {
 return (
   <section id="film">
     <div className="film-container">
-
+    <h1 className="film-title">Film</h1>
       <div className="film-panels">
 
       {films.map((film) => (

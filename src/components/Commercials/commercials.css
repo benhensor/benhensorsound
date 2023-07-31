@@ -6,8 +6,15 @@
 
 .commercials-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.commercials-title {
+  margin-bottom: 4rem;
+  color: var(--accent-color);
+  font-size: var(--text-xxxl);
 }
 
 .commercials-panels {

@@ -12,6 +12,12 @@
   align-items: center;
 }
 
+.film-title {
+  margin-bottom: 4rem;
+  color: var(--accent-color);
+  font-size: var(--text-xxxl);
+}
+
 .film-panels {
   display: grid;
   margin: 0;
