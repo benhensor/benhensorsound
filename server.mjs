@@ -40,14 +40,14 @@ contactEmail.verify((error) => {
 });
 
 router.post('/api/contact', (req, res) => {
-  const name = req.body.firstName + req.body.lastName;
+  const name = req.body.name;
   const email = req.body.email;
   const phone = req.body.phone;
   const message = req.body.message;
   const mail = {
     from: name,
     to: process.env.EMAIL_ADDRESS,
-    subject: 'Contact Form Submission - Portfolio',
+    subject: 'Contact Form Submission - Ben Hensor Sound',
     html:  `<p>Name: ${name}</p>
             <p>Email: ${email}</p>
             <p>Phone: ${phone}</p>
