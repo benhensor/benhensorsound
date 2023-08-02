@@ -8,9 +8,9 @@
 .home-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
-  width: 100%;
+  width: 60rem;
 }
 
 .home-profile-image {
@@ -49,7 +49,7 @@
 .home-titles {
   margin: 10rem 0 5rem 0;
   text-align: left;
-  width: 60rem;
+  width: 100%;
   z-index: 1;
 }
 
@@ -78,6 +78,7 @@
 .home-links {
   margin: 4rem 0;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   gap: 4rem;
 }
@@ -126,6 +127,7 @@
 .home-page-links {
   margin: 4rem 0;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   gap: 4rem;
 }
@@ -135,7 +137,7 @@
   letter-spacing: 0.2rem;
   border: none;
   background: none;
-  font-size: var(--text-xxl);
+  font-size: var(--text-xl);
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 }
@@ -147,4 +149,83 @@
 .home-page-links span {
   font-size: var(--text-xxl);
   color: var(--text-soft);
+}
+
+@media screen and (max-width: 1023px) {
+
+  .home-header {
+    width: 55rem;
+  }
+
+  .home-profile-image {
+    right: 0;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .home-title{
+    font-size: var(--text-xxxl);
+  }
+
+  .home-subtitle {
+    font-size: var(--text-xl);
+    letter-spacing: 0.1rem;
+  }
+
+  .home-content {
+    width: 55rem;
+  }
+
+  .home-links {
+    justify-content: space-evenly;
+  }
+
+  .home-page-links {
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .home-link {
+    letter-spacing: 0.1rem;
+    font-size: var(--text-l);
+  }
+  
+  .home-page-links span {
+    font-size: var(--text-xl);
+  }
+  
+
+}
+
+@media screen and (max-width: 599px) {
+
+  .home-header {
+    width: 46rem;
+  }
+
+  .home-profile-image {
+    left: 56%;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .home-titles {
+    text-align: left;
+  }
+
+  .home-title {
+    font-size: var(--text-xxl);
+  }
+
+  .home-subtitle {
+    font-size: var(--text-l);
+  }
+
+  .home-content {
+    text-align: left;
+    width: 46rem;
+  }
+
 }

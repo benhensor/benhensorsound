@@ -93,6 +93,10 @@
   .commercials-container {
     margin: 0 5%;
   }
+
+  .commercials-title {
+    font-size: var(--text-xxl);
+  }
   
   .commercials-panels {
     grid-template-columns: repeat(1, 1fr);

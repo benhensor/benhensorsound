@@ -91,6 +91,10 @@
   .film-container {
     margin: 0 5%;
   }
+
+  .film-title {
+    font-size: var(--text-xxl);
+  }
   
   .film-panels {
     gap: 3rem;

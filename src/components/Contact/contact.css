@@ -123,7 +123,10 @@ textarea {
   .contact-box div {
     flex-direction: column;
     align-items: center; /* Center items vertically in the flex container */
+  }
 
+  .contact-title {
+    font-size: var(--text-xxl);
   }
 
   label {
