@@ -60,6 +60,7 @@ export default function Contact() {
           type="text"
           id="name"
           name="name"
+          placeholder="Your name"
           value={formDetails.name}
           onChange={(e) => onFormUpdate('name', e.target.value)} 
           required
@@ -71,6 +72,7 @@ export default function Contact() {
           type="email"
           id="email"
           name="email"
+          placeholder="Your email"
           value={formDetails.email}
           onChange={(e) => onFormUpdate('email', e.target.value)} 
           required
@@ -81,6 +83,7 @@ export default function Contact() {
         <textarea
           id="message"
           name="message"
+          placeholder="Your message"
           value={formDetails.message}
           onChange={(e) => onFormUpdate('message', e.target.value)} 
           required

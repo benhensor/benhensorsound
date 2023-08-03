@@ -50,7 +50,8 @@ header {
 
 .header-bottom {
   position: absolute;
-  left: 10rem;
+  left: 56%;
+  transform: translateX(-50%);
   bottom: 2rem;
 }
 
@@ -97,21 +98,40 @@ header {
     width: 55rem;
   }
 
+  .header-top {
+    justify-content: center;
+  }
+
   .nav-title {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
+  }
+
+  .nav-subtitle {
+    
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
   }
 
   .nav-logo img {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
 
   .header-bottom {
-    left: 7.6rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .nav-menu {
     gap: 2.3rem;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+  }
+
+  .nav-menu span {
+    font-size: var(--text-s);
   }
 
 }
@@ -119,39 +139,48 @@ header {
 @media screen and (max-width: 599px) {
   
   .header-container {
-    width: 46rem;
+    width: 100%;
+    margin: 0 5%;
+    height: 10rem;
+    align-items: center;
+  }
+
+  .header-top {
+    justify-content: center;
   }
 
   .nav-logo img {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   .nav-title {
-    font-size: 2.6rem;
+    font-size: 1rem;
     letter-spacing: 0.5rem;
   }
 
   .nav-subtitle {
-    font-size: 1.5rem;
+    
+    font-size: 0.8rem;
     letter-spacing: 0.1rem;
   }
 
   .header-bottom {
     position: absolute;
-    left: 7.6rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .nav-menu {
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
   .nav-link {
-    font-size: 1.75rem;
+    font-size: 1rem;
   }
 
   .nav-menu span {
-    font-size: var(--text-l);
+    font-size: var(--text-s);
   }
   
 }

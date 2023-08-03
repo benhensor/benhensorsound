@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10rem;
 }
 
 .commercials-container {
@@ -86,9 +87,17 @@
   object-position: center center;
 }
 
+@media screen and (max-width: 1023px) {
 
+  
 
-@media screen and (max-width: 59.9rem) {
+}
+
+@media screen and (max-width: 599px) {
+  
+  #commercials {
+    padding-top: 0rem;
+  }
   
   .commercials-container {
     margin: 0 5%;

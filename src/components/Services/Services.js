@@ -32,6 +32,7 @@ export default function About() {
           <p className="services-service">
           The workflow can be tailored to fit your budget and requirements, so I can develop a solution that will suit you. Specific services include:
           </p>
+          <div className="services-list-container">
           <ul className="services-list">
             <li className="services-item">• Dialogue Editing</li>
             <li className="services-item">• Sound Design</li>
@@ -43,6 +44,7 @@ export default function About() {
             <li className="services-item">• Mastering</li>
             <li className="services-item">• Audio Restoration</li>
           </ul>
+          </div>
         </div>
 
         <div className="services-content">
