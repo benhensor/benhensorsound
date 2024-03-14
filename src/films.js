@@ -13,7 +13,7 @@ const films = [
   {
     id: 2,
     title: "After the End",
-    description: "For Rene Fustercluck, life was bad, the Apocalypse was awful and then Gordon arrived. <br><br>'After the End' explores the possibility that the only thing worse than being the last man on earth, is being the second to last man on earth.",
+    description: "For Rene Fustercluck, life was bad, the Apocalypse was awful and then Gordon arrived. 'After the End' explores the possibility that the only thing worse than being the last man on earth, is being the second to last man on earth.",
     image: [
       "../thumbnails/film/after-the-end/afterTheEnd01.png", 
       "../thumbnails/film/after-the-end/afterTheEnd05.png", 
