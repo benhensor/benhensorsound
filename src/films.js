@@ -2,7 +2,7 @@ const films = [
   {
   id: 1,
   title: "A Cambodian Spring",
-  description: "A Cambodian Spring is an intimate and unique portrait of three people caught up in the chaotic and often violent development that is shaping modern-day Cambodia. <br><br>Shot over six years, the film charts the growing wave of land-rights protests that led to the ‘Cambodian Spring’ and the tragic events that followed. <br><br>This film is about the complexities - both political and personal, of fighting for what you believe in.",
+  description: "A Cambodian Spring is an intimate and unique portrait of three people caught up in the chaotic and often violent development that is shaping modern-day Cambodia. Shot over six years, the film charts the growing wave of land-rights protests that led to the ‘Cambodian Spring’ and the tragic events that followed. This film is about the complexities - both political and personal, of fighting for what you believe in.",
   image: [
     "../thumbnails/film/cambodian-spring/acs02.png", 
     "../thumbnails/film/cambodian-spring/acs03.png", 
@@ -36,7 +36,7 @@ const films = [
   {
     id: 4,
     title: "Made In Taiwan",
-    description: "Under the elusive name 'Made In Taiwan', experimental film maker Jack invents an exciting type of film, which induces a high in the viewer and becomes an underground phenomenon throughout Taipei. <br><br>With the help of Amy Lin, organised screenings pop up around the city and crowds of eager MIT fans flood in to see each of his newest creations. <br><br>As his films become more and more popular, Jack fights obsessively to keep complete control of his product. <br><br>He also comes to realize that his films have some lasting effects on the mind, and, with constant exposure to the films, Jack slides into a dark, dream world of his own creation that he may never return from.",
+    description: "Under the elusive name 'Made In Taiwan', experimental film maker Jack invents an exciting type of film, which induces a high in the viewer and becomes an underground phenomenon throughout Taipei. With the help of Amy Lin, organised screenings pop up around the city and crowds of eager MIT fans flood in to see each of his newest creations. As his films become more and more popular, Jack fights obsessively to keep complete control of his product. He also comes to realize that his films have some lasting effects on the mind, and, with constant exposure to the films, Jack slides into a dark, dream world of his own creation that he may never return from.",
     image: [
       "../thumbnails/film/made-in-taiwan/MIT02.png",
       "../thumbnails/film/made-in-taiwan/MIT05.png",
@@ -47,7 +47,7 @@ const films = [
   {
     id: 5,
     title: "Mother Midnight",
-    description: "Ths is the story of Jiwon, a young woman in her twenties, struggling to cope with the loss of her mother, her father's alcohol addiction, and her tumultuous relationship. <br><br>Jiwon finds herself in a difficult situation when a violent construction worker demands compensation for a dispute that he had with her mother. <br><br>Feeling overwhelmed and out of options, Jiwon turns to a local shaman who helps her the path to save her family, her home, and ultimately, herself.",
+    description: "Ths is the story of Jiwon, a young woman in her twenties, struggling to cope with the loss of her mother, her father's alcohol addiction, and her tumultuous relationship. Jiwon finds herself in a difficult situation when a violent construction worker demands compensation for a dispute that he had with her mother. Feeling overwhelmed and out of options, Jiwon turns to a local shaman who helps her the path to save her family, her home, and ultimately, herself.",
     image: [
       "../thumbnails/film/mother-midnight/mm02.png",
       "../thumbnails/film/mother-midnight/mm03.png",
@@ -58,7 +58,7 @@ const films = [
   {
     id: 6,
     title: "Glyn",
-    description: "Glyn is a 10 year-old Welsh boy who lives in an isolated area and dreams to become an astronaut. <br>He finds refuge in a caravan adjacent to his house to escape from his authoritarian dad. <br>Glyn's friend Rhodri is moving from the area and soon Glyn will be alone again.",
+    description: "Glyn is a 10 year-old Welsh boy who lives in an isolated area and dreams to become an astronaut. He finds refuge in a caravan adjacent to his house to escape from his authoritarian dad. Glyn's friend Rhodri is moving from the area and soon Glyn will be alone again.",
     image: [
       "../thumbnails/film/glyn/glyn01.png",
       "../thumbnails/film/glyn/glyn03.png",
@@ -69,7 +69,7 @@ const films = [
   {
     id: 7,
     title: "La Petite Maison",
-    description: "A young man can’t help but see his girlfriend as various objects - including a french tart. <br><br>Perception, misunderstanding and indifference are explored in this darkly funny animation about the foibles of romance.",
+    description: "A young man can’t help but see his girlfriend as various objects - including a french tart. Perception, misunderstanding and indifference are explored in this darkly funny animation about the foibles of romance.",
     image: [
       "../thumbnails/film/la-petite-maison/laPetiteMaison01.png",
       "../thumbnails/film/la-petite-maison/laPetiteMaison03.png",
@@ -80,7 +80,7 @@ const films = [
   {
     id: 8,
     title: "Stargirl",
-    description: "Stan is an aging sheep farmer who's at odds with life and out of hope. <br><br>During a meteor storm a mysterious female alien arrives on his farm, she appears to be lost.",
+    description: "Stan is an aging sheep farmer who's at odds with life and out of hope. During a meteor storm a mysterious female alien arrives on his farm, she appears to be lost.",
     image: [
       "../thumbnails/film/stargirl/STARGIRL01.png",
       "../thumbnails/film/stargirl/STARGIRL02.png",
@@ -91,7 +91,7 @@ const films = [
   {
     id: 9,
     title: "Pedigree",
-    description: "In the city of London, Alex Powell is a successful 30-something banker running away from his past. <br><br>When an injured young woman arrives at his front door his world spirals out of control.",
+    description: "In the city of London, Alex Powell is a successful 30-something banker running away from his past. When an injured young woman arrives at his front door his world spirals out of control.",
     image: [
       "../thumbnails/film/pedigree/Pedigree02.png",
       "../thumbnails/film/pedigree/Pedigree04.png",
@@ -102,7 +102,7 @@ const films = [
   {
     id: 10,
     title: "TicToc",
-    description: "In the sixteen years that Felix has grown up, he's had to contend with the unpredictable and consuming nature of Tourette's Disorder, all whilst navigating the usual tribulations of adolescence. <br><br>He wants to share his story and break the stigma.",
+    description: "In the sixteen years that Felix has grown up, he's had to contend with the unpredictable and consuming nature of Tourette's Disorder, all whilst navigating the usual tribulations of adolescence. He wants to share his story and break the stigma.",
     image: [
       "../thumbnails/film/tictoc/tictoc02.png",
       "../thumbnails/film/tictoc/tictoc05.png",
