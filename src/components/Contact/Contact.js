@@ -23,30 +23,32 @@ export default function Contact() {
   }
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    setButtonText('Sending...')
-    let response = await fetch('http://localhost:5000/api/contact', {
+    e.preventDefault();
+    setButtonText('Sending...');
+    let response = await fetch('/.netlify/functions/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
-        },
-        body: JSON.stringify(formDetails)
-      })
-      setButtonText('SEND')
-      let result = await response.json()
-      setFormDetails(formData)
-      if (result.code === 200) {
-        setStatus({ success: true, message: 'Message sent successfully!'})
-        setTimeout(() => {
-        setStatus({});
-        }, 2000);
-      } else {
-        setStatus({ success: false, message: 'Something went wrong, please try again later.'})
-        setTimeout(() => {
-          setStatus({});
-        }, 2000);
-      }
-  }
+      },
+      body: JSON.stringify(formDetails)
+    });
+
+    let result = await response.json();
+    setFormDetails(formData);
+    if (result.code === 200) {
+      setStatus({ success: true, message: 'Message sent successfully!' });
+      setButtonText('Message sent successfully!');
+    } else {
+      setStatus({ success: false, message: 'Something went wrong, please try again later.' });
+      setButtonText('Something went wrong, please try again later.');
+    }
+
+    // Reset the button text after 2 seconds
+    setTimeout(() => {
+      setStatus({});
+      setButtonText('SEND');
+    }, 2000);
+  };
 
   return (
     <section id="contact">
@@ -89,13 +91,10 @@ export default function Contact() {
           required
         />
       </div>
-      <button type="submit"><span>{buttonText}</span><img src={send} alt="" className="connect-icon" /></button>
-      {
-        status.message &&
-        <div className="contact-status-message">
-          <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-        </div>
-      }
+      <button type="submit">
+        <span>{buttonText}</span>
+        <img src={send} alt="" className="connect-icon" />
+      </button>
     </form>
 
 

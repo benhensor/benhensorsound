@@ -6,9 +6,6 @@ import dotenv from 'dotenv';
 const router = Router();
 dotenv.config();
 
-
-
-
 const PORT = process.env.PORT || 5000;
 
 // Server used to send emails
@@ -16,8 +13,6 @@ const app = express();
 app.use(cors());
 app.use(json());
 app.use('/', router);
-console.log(process.env.EMAIL_ADDRESS)
-console.log(process.env.EMAIL_PASS)
 
 app.get('/api', (req, res) => {
   res.json({ message: 'Hello from server!' });
