@@ -13,7 +13,6 @@ export default function Contact() {
 
   const [formDetails, setFormDetails] = useState(formData)
   const [buttonText, setButtonText] = useState('SEND')
-  const [status, setStatus] = useState({})
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -36,16 +35,13 @@ export default function Contact() {
     let result = await response.json();
     setFormDetails(formData);
     if (result.code === 200) {
-      setStatus({ success: true, message: 'Message sent successfully!' });
       setButtonText('Message sent successfully!');
     } else {
-      setStatus({ success: false, message: 'Something went wrong, please try again later.' });
       setButtonText('Something went wrong, please try again later.');
     }
 
     // Reset the button text after 2 seconds
     setTimeout(() => {
-      setStatus({});
       setButtonText('SEND');
     }, 2000);
   };
